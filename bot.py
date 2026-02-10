@@ -5,6 +5,9 @@ Strategy: Trend following with Binance Futures compliance
 - Proper error handling
 - Working order placement
 """
+import os
+from dotenv import load_dotenv
+load_dotenv()
 
 import sys
 import time
@@ -21,9 +24,9 @@ from binance.enums import *
 
 # ================= CONFIG =================
 class Config:
-    # ===== API KEYS =====
-    API_KEY = ""
-    API_SECRET = ""
+    API_KEY = os.getenv("BINANCE_API_KEY")
+    API_SECRET = os.getenv("BINANCE_API_SECRET")
+
     
     # ===== SYMBOLS - ONLY VALID BINANCE FUTURES =====
     SYMBOLS = [
