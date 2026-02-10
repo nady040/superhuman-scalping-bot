@@ -22,8 +22,8 @@ from binance.enums import *
 # ================= CONFIG =================
 class Config:
     # ===== API KEYS =====
-    API_KEY = "WS6wFqRAIX2X0w5kP2xkZp248fEKUcTT40BzTFlnV98P22tQv98H8Ky1v5KKrmFf"
-    API_SECRET = "NF9sHNTxpekFYn2XmMgfBYf4Q1YPE6TMOJyw0Zmp4UIJUy4yLaIe0VrHE6xHmfQM"
+    API_KEY = ""
+    API_SECRET = ""
     
     # ===== SYMBOLS - ONLY VALID BINANCE FUTURES =====
     SYMBOLS = [
